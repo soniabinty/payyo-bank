@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+  <main class="flex justify-between">
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-3">
+<!-- button start -->
+
+<div class="stats shadow mt-10">
+  <div class="stat">
+    <div class="stat-title">Balance</div>
+    <div id="main-balance" class="stat-value">9000</div>
+    
+  </div>
+</div>
+
+
+<!-- divider -->
+
+<div class="divider"></div>
+<div class="flex justify-between space-x-4">
+<button id="add-mon" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
+<button id="cash-out" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
+</div>
+
+
+
+<div class="divider"></div>
+<form id="add-money" class="card-body">
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Amount</span>
+    </label>
+    <input id="add-amount" type="text" placeholder="Add Amount" class="input input-bordered" required />
+  </div>
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Pin Number</span>
+    </label>
+    <input id="pin-nb" type="password" placeholder="Your Pin" class="input input-bordered" required autocomplete="off" />
+  
+  </div>
+  <div class="form-control mt-6">
+    <button id="home-add" class="btn btn-primary">Add Money</button>
+  </div>
+</form>
+
+
+
+<!-- cash out -->
+
+
+<form id="cash-out-form" class="card-body hidden">
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Amount</span>
+    </label>
+    <input id="cash-amount" type="text" placeholder="Add Amount" class="input input-bordered" required />
+  </div>
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Pin Number</span>
+    </label>
+    <input id="pin-nm" type="password" placeholder="Your Pin" class="input input-bordered" required autocomplete="off" />
+  
+  </div>
+  <div class="form-control mt-6">
+    <button id="home-cash" class="btn btn-primary">Cash Out</button>
+  </div>
+</form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/home.js"></script>
+  <script src="js/cash.js"></script>
+  <script src="features.js"></script>
+</body>
+</html>
